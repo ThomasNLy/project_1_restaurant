@@ -1,0 +1,459 @@
+
+
+/*width, height 100% needed for images to take up entire screen */
+body{
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    width: 100%;
+    /*overflow-x: hidden;/*prevents vertical scroll bar if content spills over the screen size*/
+}
+
+/*width, height 100% needed for images to take up entire screen */
+html{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+/*align-items allows the hamburger menu button to be centered somehow???*/
+.navbar{
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    background-color: #ffffff;
+}
+
+/*position absolute allows the logo to be flexed into the center without the hamburger menu icon affecting it.
+position: absolute, removes item from document flow, but some how flex still affects it as it's own seperate entity*/
+.hamburgerMenu{
+    position: absolute;
+    left: 4%;
+}
+
+.hamburgerMenu a{
+    font-size: 2em;
+}
+
+.logo{
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+/* .navLinks{
+    width: 100%;
+   
+} */
+
+/*hides the menu for mobile when hamburger icon has not been clicked
+position: absolute allows the menu to appear over elements below it without pushing them down
+*/
+.navLinks ul{
+    display: none;
+    position: absolute;
+    margin-top: 1em;
+    background-color: white;
+    width: 100%;
+}
+
+
+.navLinks a{
+    padding: 1em 0 1em 2em;
+    
+    /*allows padding to be respected to the inline elements, a tags are inline elements by default*/
+    display: inline-block;
+    
+    /*needed so during mobile usage even if user doesn't click on exactly on the word, the area will act as a button*/
+    width: 100%;
+}
+
+
+
+
+
+/*main sections bg image*/
+.hero_bg{
+    
+    background-image: url(/images/backgroundImage.jpg);
+    /* background-position: 12% 80%; */
+    background-size: cover;
+    
+    /*controls what part of the image is shown*/
+    background-position: 40%; 
+    
+    /*makes the image take up full browser height*/
+    height: 100%;
+    width: 100%;
+    
+   
+}
+
+
+/* .imageContainer{
+    height: 70%;
+} */
+
+/*makes image fit full browser width, to the edge*/
+img{
+    width: 100%;
+    height: auto;
+}
+
+.img1{
+    display: none;
+}
+
+
+.img3{
+    overflow: hidden;/*prevents content from spilling over container*/
+    max-height: 15em;
+    margin-top: -0.15em;
+
+}
+
+/*makes it so the container can act as sort of a "crop tool" for the image by using position:relative and margin to move it around */
+.img3 img{
+    max-height: 100%;
+    position:relative;
+    margin-top: -70%;
+}
+
+
+
+
+
+
+.story{
+    margin-left: 2em;
+    padding-top: 2em;
+}
+.story h2{
+    padding-bottom: 1.5em;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.story p{
+    
+   padding-bottom: 1.5em;
+    font-weight: 400;
+}
+
+footer{
+    background-color: rgb(43, 42, 42);
+    text-align: center;
+    color: white;
+    font-family: 'Roboto mono' monospace;
+    padding-bottom: 7em;
+    padding-top: 2em;
+}
+
+
+
+footer h2{
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+footer p{
+    padding-bottom: 1em;
+}
+
+.hours{
+    padding-top: 1em;
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .hamburgerMenu{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.6em 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .logo{
+        margin-left: 1.5em;
+    }
+    .navLinks{
+        width: 30%;
+        margin-right: 2em;
+    }
+    
+    .navLinks ul{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        background-color: transparent;
+        position: static;
+        
+        
+    }
+
+    .navLinks a{
+        padding: 0;
+        width: 100%;
+        font-size: 1.15rem;
+    }
+
+    
+    .imageContainer{
+        padding: 1.75em 1.75em;
+        
+        
+
+        height: 600px;
+        max-height: 70%;
+        
+        display: grid;
+        grid-template-columns: 50% 45%;
+        grid-template-rows: 45% 55%;
+        grid-template-areas: 
+        "item-1 item-3"
+        "item-2 item-3";
+
+        row-gap: 1.5em;
+        column-gap: 1.75em;
+
+        overflow: hidden;
+        
+    }
+    
+
+    .img1{
+        display: block;
+        grid-area: item-1;
+
+        max-height: 100%;
+        max-width: 100%;
+
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .img1 img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .img2{
+        grid-area: item-2;
+        overflow: hidden;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .img2 img{
+        object-fit: fill;
+        
+    }
+
+    .img3{
+        
+        grid-area: item-3;
+        margin-top: 0;
+        
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .img3 img{
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    
+    footer{
+        padding-bottom: 2em;
+    }
+
+    footer p{
+        display: inline;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1024px){
+    
+    
+    .navbar{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        width: 100%;
+
+        padding: 1em 0;
+        
+    }
+    .hamburgerMenu{
+        display: none;
+    }
+
+
+
+
+
+    .logo{
+        margin-left: 2em;
+        font-size: 2rem;
+    }
+    .navLinks{
+        width: 30%;
+        margin-right: 2em;
+       
+    }
+    .navLinks ul{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        
+
+        background-color: transparent;
+      
+    }
+
+    .navLinks a{
+        padding: 0;
+        font-size: 1.25rem;
+    }
+
+    .navLinks a:hover{
+        
+        font-weight: 600;
+    }
+
+    section{
+        height: 100%;
+        padding-left: 3em;
+        padding-right: 3em;
+        
+    }
+    
+    .imageContainer{
+        display: flex;
+        max-height: 50%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1em;
+        
+
+    }
+
+    .img1{
+        display: block;
+        width: 30%;
+        max-height: 100%;
+        height: 80%;
+
+    }
+
+    
+
+    .img2{
+        width: 30%;
+        max-height: 100%;
+        height: 80%;
+    }
+
+    .img2 img{
+        object-fit: fill;
+        
+       
+
+        
+    }
+
+    .img3{
+        width: 30%;
+        max-height: 100%;
+        height: 80%;
+        margin-top: 0;
+    }
+
+    .imageContainer img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img3 img{
+
+        position: static;
+        object-fit: cover;
+        margin-top: 0;
+    }
+
+    .story{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        margin-left: 0;
+        padding-top: 2em;
+       
+        
+    }
+
+    .story h2{
+        font-size: 1.5em;
+    }
+    
+    .story p{
+        font-size: 1.2em;
+    }
+
+    .info1{
+        padding-right: 4em;
+    }
+
+    .info2{
+        padding-left: 2em;
+    }
+
+    footer{
+        padding-bottom: 2em;
+    }
+
+    footer p{
+        display: inline;
+    }
+
+
+    
+
+    
+    
+
+
+}
+

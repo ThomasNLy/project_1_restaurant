@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/contact_us_style.css">
+    
+    <!--hamburger button link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <div class="alertDialog" id="alertDialog">
+        <div class="alertDialogContent">
+            <p>Message Sent</p>
+            <button class="alertDialogButton" onclick="dismissDialog()">OK</button>
+        </div>   
+    </div>
+    
+    
+    
+    <header>
+        <nav>
+            <div class="navbar">
+                
+                <div class="hamburgerMenu">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleDropDownMenu()">
+                        <i class="fa fa-bars fa-lg"></i>
+                    </a>
+                </div>
+
+                <div class="logo">
+                    <a href="index.html">PHOSTOP</a>
+                </div>
+                
+                <div class="navLinks">
+                    <ul id="myLinks">
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">MENU</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+    </header>
+
+    
+
+    
+    <div class="formWrapper">
+        <h1>Contact Us</h1>
+        <form action="" method="POST" onsubmit="return submitButtonAction()">
+            <input type="text" id="nameField" name="fullName" placeholder="Full Name">
+            <p class="errorMessage" id="nameErrorMessage">This field is required</p>
+            <input type="text" id="emailField" name="email" placeholder="Email Address">
+            <p class="errorMessage" id="emailErrorMessage">This field is required</p>
+            <input type="text" id="subjectField" name="subject" placeholder="Subject">
+            <p class="errorMessage" id="subjectErrorMessage">This field is required</p>
+            <textarea name="message" id="messageField" cols="30" rows="8" placeholder="Message"></textarea>
+            <p class="errorMessage" id="messageErrorMessage">This field is required</p>
+            <input type="button" value="Submit" class="submitButton" onclick="submitButtonAction()">
+
+        </form>
+    </div>
+    <footer>
+        <div class="location">
+            <h2>Location</h2>
+            <p>11 This Street,</p>
+            <p>Winnipeg MB</p>
+            <p>M7K 4J5</p>
+        </div>
+
+        <div class="hours">
+            <h2>Opening Hours</h2>
+            <p>Mon-Sat 11-9pm,</p>
+            <p>Sun 12-8pm</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
