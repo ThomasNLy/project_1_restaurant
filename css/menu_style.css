@@ -1,57 +1,18 @@
-/*width, height 100% needed for images to take up entire screen */
+:root{
+    --p-font-size: 1rem;
+    --p-font-size-laptop: 1.2rem;
+    --menu-title-font-size: 1.25rem;
+    --menu-item-bottom-margin: 1.2em;
+    --menu-section-bottom-margin: 1.5em;
+}
+
+
 body{
     font-family: 'Roboto Mono', monospace;
-    height: 100%;
-    width: 100%;
-    /*overflow-x: hidden;/*prevents vertical scroll bar if content spills over the screen size*/
 }
-
-/*width, height 100% needed for images to take up entire screen */
-html{
-    height: 100%;
-    width: 100%;
-}
-
 a{
     text-decoration: none;
     color: black;
-}
-
-
-
-.alertDialog{
-    background-color: rgba(0, 0, 0, 0.37);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: fixed;
-
-    display: none;
-}
-
-.alertDialogContent{
-    width: initial;
-    padding: 5em 1em 2em 1em;
-    width: 75%;
-    background: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 53%;
-    text-align: center;
-}
-.alertDialogContent p{
-    font-weight: 600;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-}
-
-.alertDialogButton{
-    margin-top: 3em;
-    border: none;
-    padding: 0.5em 2em;
-    background-color: black;
-    color: white;
-    /* font-size: 1.15rem; */
 }
 
 .navbar{
@@ -93,52 +54,50 @@ a{
 }
 
 
-
-.formWrapper{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 7em;
+.menu{
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 12em;
 }
 
-.formWrapper h1{
-    text-align: center;
-    padding-top: 3em;
-    padding-bottom: 1em;
+h1{
     font-weight: 600;
     font-size: 1.875rem;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
 }
 
-input[type=text], textarea{
-    font-family: 'Roboto Mono', monospace;
-    
-    display: block;
-    margin-bottom: 1.25em;
-    max-width: 100%;
-    width: 97%;
-    
-
-    box-sizing: border-box;
-    padding: 0.5em 0.5em;
+.menu h2{
+    font-size: var(--menu-title-font-size);
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+.menu h3{
+    font-size: var(--menu-title-font-size);
 }
 
-.errorMessage{
-    display: none;
-    margin-top: -1em;
-    padding-bottom: 1em;
-    font-size: 0.8rem;
-    color: rgb(255, 0, 0);
+.menu p{
+    font-size: var(--p-font-size);
 }
 
-.submitButton{
-    font-family: 'Roboto Mono', monospace;
-    padding: 0.5em 1em;
-    background-color: #E7C5BD;
-    border: none;
+.menuMains, .menuAppetizers{
+    margin-bottom: var(--menu-section-bottom-margin);
 }
 
-.submitButton:hover{
-background-color: #f3d0c8;
+
+.menuItemTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+.menuItemTitle p{
+    font-size: var(--menu-title-font-size);
+
+}
+
+.menuItemSpacing{
+    margin-bottom: var(--menu-item-bottom-margin);
 }
 
 footer{
@@ -165,7 +124,6 @@ footer p{
     padding-top: 1em;
     
 }
-
 
 @media screen and (min-width: 768px){
 
@@ -204,42 +162,20 @@ footer p{
         font-size: 1.15rem;
     }
 
-
-
-    .alertDialogContent{
-        margin-top: 40%;
-        width: 55%;
-        padding: 5em 2em 2em 2em;
-    }
-
-    .alertDialog p{
+    h1{
         font-size: 2rem;
     }
-    .alertDialogButton{
-        font-size: 1.25rem;
-        margin-top: 5em;
-    }
-    .formWrapper{
-        min-height: 100%;
-        padding-bottom: 6em;
-    }
 
-    .formWrapper h1{
-        font-size: 2rem;
+    .menu{
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        display: grid;
+        grid-template-columns: repeat(2, 43%);
+        column-gap: 14%;
     }
-    input[type=text], textarea{
-        font-size: 1.25rem;
-        width: 100%;
+    footer .hours{
+        margin-top: 1em;
     }
-
-    .errorMessage{
-        margin-top: -1.75em;
-    }
-
-    .submitButton{
-        font-size: 1.25rem;
-    }
-
     footer{
         padding-bottom: 2em;
        
@@ -250,9 +186,7 @@ footer p{
         display: inline;
     }
 
-    footer .hours{
-        margin-top: 1em;
-    }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -296,21 +230,17 @@ footer p{
         font-weight: 600;
     }
 
-    .alertDialogContent{
-        margin-top: 17%;
-        width: 32.5%;
+    .menu{
+        padding-left: 6em;
+        padding-right: 6em;
+        row-gap: 2%;
+    }
+    .menu h2{
+        font-size: var(--menu-title-font-size);
     }
 
-    .alertDialogButton{
-        margin-top: 4em;
-    }
-
-    .formWrapper{
-        width: 50%;
-    }
-
-    .errorMessage{
-        margin-top: -1.75em;
+    .menu p{
+        font-size: var(--p-font-size-laptop);
     }
 
     footer{
@@ -326,6 +256,8 @@ footer p{
     footer .hours{
         margin-top: 1em;
     }
-    
 }
+
+
+
 

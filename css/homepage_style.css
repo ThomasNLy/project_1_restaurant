@@ -39,7 +39,7 @@ position: absolute, removes item from document flow, but some how flex still aff
 }
 
 .hamburgerMenu a{
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .logo{
@@ -112,6 +112,7 @@ img{
 }
 
 
+
 .img3{
     overflow: hidden;/*prevents content from spilling over container*/
     max-height: 15em;
@@ -145,6 +146,7 @@ img{
     
    padding-bottom: 1.5em;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 footer{
@@ -297,6 +299,10 @@ footer p{
         display: inline;
     }
 
+    footer .hours{
+        margin-top: 1em;
+    }
+
 
 }
 
@@ -425,11 +431,11 @@ footer p{
     }
 
     .story h2{
-        font-size: 1.5em;
+        font-size: 1.875rem;
     }
     
     .story p{
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .info1{
@@ -448,6 +454,9 @@ footer p{
         display: inline;
     }
 
+    footer .hours{
+        margin-top: 1em;
+    }
 
     
 
