@@ -82,7 +82,7 @@ position: absolute allows the menu to appear over elements below it without push
 /*main sections bg image*/
 .hero_bg{
     
-    background-image: url(images/backgroundImage.jpg);
+    background-image: url(../images/backgroundImage.jpg);
     /* background-position: 12% 80%; */
     background-size: cover;
     
