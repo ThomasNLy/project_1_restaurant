@@ -2,29 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    
+    <title>About Us</title>
+
+    <!--style sheets-->
     <link rel="stylesheet" href="css/css_reset.css">
-    <link rel="stylesheet" href="css/contact_us_style.css">
-    
-    <!--hamburger button link-->
+    <link rel="stylesheet" href="css/about_us_style.css">
+
+   <!--hamburger icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    
-    <div class="alertDialog" id="alertDialog">
-        <div class="alertDialogContent">
-            <p>Message Sent</p>
-            <button class="alertDialogButton" onclick="dismissDialog()">OK</button>
-        </div>   
-    </div>
-    
-    
     
     <header>
         <nav>
@@ -42,33 +34,25 @@
                 
                 <div class="navLinks">
                     <ul id="myLinks">
-                        <li><a href="about_us.html">ABOUT</a></li>
+                        <li><a href="#">ABOUT</a></li>
                         <li><a href="menu.html">MENU</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="contact_us.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>   
         </nav>
     </header>
 
-    
+    <div class="container">
+        <h1>About Us</h1>
 
-    
-    <div class="formWrapper">
-        <h1>Contact Us</h1>
-        <form action="" method="POST" onsubmit="return submitButtonAction()">
-            <input type="text" id="nameField" name="fullName" placeholder="Name">
-            <p class="errorMessage" id="nameErrorMessage">This field is required</p>
-            <input type="text" id="emailField" name="email" placeholder="Email Address">
-            <p class="errorMessage" id="emailErrorMessage">This field is required</p>
-            <input type="text" id="subjectField" name="subject" placeholder="Subject">
-            <p class="errorMessage" id="subjectErrorMessage">This field is required</p>
-            <textarea name="message" id="messageField" cols="30" rows="8" placeholder="Message"></textarea>
-            <p class="errorMessage" id="messageErrorMessage">This field is required</p>
-            <input type="button" value="Submit" class="submitButton" onclick="submitButtonAction()">
+        <div class="imageContainer">
+            <img src="images/image4.jpg" alt="An image of a bowl of noodle soup ontop a wooden table">
+        </div>
 
-        </form>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed asperiores atque aut dolorem? Saepe iste autem impedit similique vel perferendis. Animi necessitatibus soluta iure quidem magnam alias provident ipsum explicabo dolore, eligendi voluptatum cumque reprehenderit veritatis hic excepturi ipsam vitae laudantium enim culpa est error perferendis? Doloribus, non vitae.</p>
     </div>
+
     <footer>
         <div class="location">
             <h2>Location</h2>
@@ -85,5 +69,6 @@
     </footer>
 
     <script src="javascript/script.js"></script>
+
 </body>
 </html>

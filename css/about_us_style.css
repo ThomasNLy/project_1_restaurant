@@ -1,15 +1,25 @@
 :root{
     --p-font-size: 1rem;
     --p-font-size-laptop: 1.2rem;
-    --menu-title-font-size: 1.25rem;
-    --menu-item-bottom-margin: 1.2em;
-    --menu-section-bottom-margin: 1.5em;
+    --h1-font-size: 1.875rem;
+    --h1-font-size-laptop: 2rem;
+    --h1-font-weight: 600;
 }
 
 
 body{
     font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    width: 100%;
+    
 }
+
+/*width, height 100% needed for images to take up entire screen */
+html{
+    height: 100%;
+    width: 100%;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -53,52 +63,37 @@ a{
     width: 100%;
 }
 
-
-.menu{
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-    padding-bottom: 12em;
+.container{
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-bottom: 7em;
 }
 
 h1{
-    font-weight: 600;
-    font-size: 1.875rem;
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
     text-align: center;
     margin-top: 3em;
-    margin-bottom: 1.5em;
 }
 
-.menu h2{
-    font-size: var(--menu-title-font-size);
-    font-weight: 600;
-    margin-bottom: 0.8em;
-}
-.menu h3{
-    font-size: var(--menu-title-font-size);
+.imageContainer{
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.menu p{
+img{
+    width: 100%;
+    height: auto;
+}
+
+p{
     font-size: var(--p-font-size);
 }
 
-.menuAppetizers, .menuMains{
-    margin-bottom: var(--menu-section-bottom-margin);
-}
 
 
-.menuItemTitle{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
-}
-.menuItemTitle p{
-    font-size: var(--menu-title-font-size);
 
-}
 
-.menuItemSpacing{
-    margin-bottom: var(--menu-item-bottom-margin);
-}
 
 footer{
     background-color: rgb(43, 42, 42);
@@ -129,7 +124,7 @@ footer p{
 
     .hamburgerMenu{
         display: none;
-    }            
+    }
 
     .navbar{
         display: flex;
@@ -162,17 +157,31 @@ footer p{
         font-size: 1.15rem;
     }
 
-    h1{
-        font-size: 2rem;
+    .container{
+        margin-left: 4em;
+        margin-right: 4em;
+        min-height: 76%;
     }
 
-    .menu{
-        padding-left: 2.5em;
-        padding-right: 2.5em;
-        display: grid;
-        grid-template-columns: repeat(2, 43%);
-        column-gap: 14%;
+    h1{
+        font-size: var(--h1-font-size-laptop);
     }
+
+    .imageContainer{
+        
+        height: 22em;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: -0.5em;
+
+    }
+
     footer .hours{
         margin-top: 1em;
     }
@@ -186,10 +195,10 @@ footer p{
         display: inline;
     }
 
-
 }
 
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width:1024px){
     .hamburgerMenu{
         display: none;
     }            
@@ -230,18 +239,28 @@ footer p{
         font-weight: 600;
     }
 
-    .menu{
-        padding-left: 6em;
-        padding-right: 6em;
-        row-gap: 2%;
-    }
-    .menu h2{
-        font-size: var(--menu-title-font-size);
+    .container{
+        margin-left: 20em;
+        margin-right: 20em;
     }
 
-    .menu p{
+    .imageContainer{
+        
+       
+        width: 100%;
+        overflow: hidden;
+        
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    p{
         font-size: var(--p-font-size-laptop);
     }
+
 
     footer{
         padding-bottom: 2em;
@@ -257,7 +276,3 @@ footer p{
         margin-top: 1em;
     }
 }
-
-
-
-

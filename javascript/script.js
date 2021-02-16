@@ -32,6 +32,7 @@ nameField.addEventListener("keyup", (event)=>{
     if(nameField.value != "")
     {
         nameFieldError.style.display = "none";
+        nameField.style.border = "0.01em solid grey";
     }
 });
 
@@ -39,6 +40,7 @@ emailField.addEventListener("keyup", (event) =>{
     if(validEmailFormat(emailField.value))
     {
         emailFieldError.style.display = "none";
+        emailField.style.border = "0.01em solid grey";
     }
 });
 
@@ -46,6 +48,7 @@ subjectField.addEventListener("keyup", (event)=>{
     if(subjectField.value != "")
     {
         subjectFieldError.style.display = "none";
+        subjectField.style.border = "0.01em solid grey";
     }
 });
 
@@ -53,6 +56,7 @@ messageField.addEventListener("keyup", (event) =>{
     if(messageField.value != "")
     {
         messageFieldError.style.display = "none";
+        messageField.style.border = "0.01em solid grey";
     }
 });
 
@@ -117,24 +121,28 @@ function formValidation(nameFieldValue, emailFieldValue, subjectFieldValue, mess
     
     if(nameFieldValue == "")
     {
-       nameFieldError.style.display = "block";
+        nameField.style.border = "0.1em solid black";
+        nameFieldError.style.display = "block";
         bool = false;
     }
 
     if(!validEmailFormat(emailFieldValue))
     {
+        emailField.style.border = "0.1em solid black";
         emailFieldError.style.display = "block";
         bool = false;
     }
 
     if(subjectFieldValue == "")
     {
+        subjectField.style.border = "0.1em solid black";
         subjectFieldError.style.display = "block";
         bool = false;
     }
 
     if(messageFieldValue == "")
     {
+        messageField.style.border = "0.1em solid black";
         messageFieldError.style.display = "block";
         bool = false;
     }

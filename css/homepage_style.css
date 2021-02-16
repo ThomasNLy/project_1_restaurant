@@ -134,6 +134,7 @@ img{
 
 .story{
     margin-left: 2em;
+    margin-right: 2em;
     padding-top: 2em;
 }
 .story h2{
@@ -425,6 +426,7 @@ footer p{
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         margin-left: 0;
+        margin-right: 0;
         padding-top: 2em;
        
         
