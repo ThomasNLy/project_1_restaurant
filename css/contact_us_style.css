@@ -54,6 +54,8 @@ a{
     /* font-size: 1.15rem; */
 }
 
+
+
 .animateOverlayFadeOut{
     animation: fadeOut 0.3s forwards;
 }
@@ -349,3 +351,4 @@ footer p{
         opacity: 0;
     }
 }
+
