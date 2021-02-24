@@ -98,7 +98,12 @@ function submitButtonAction(){
  * turns the alert dialog off 
  */
 function dismissDialog(){
-    alertDialog.style.display = "none";
+    alertDialog.classList.add('animateOverlayFadeOut');
+    setTimeout(() => {
+        alertDialog.classList.remove('animateOverlayFadeOut');
+        alertDialog.style.display = 'none';
+    }, 300);
+    
 }
 
 //makes it so when the user clicks anywhere else on the screen the alert dialogue will close.
