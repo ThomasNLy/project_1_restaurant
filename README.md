@@ -3,4 +3,5 @@ A personal project for a fictional restaurant. This repository is used for hosti
 Images used are not my own. They are stock images from pexels.com and unsplash.com
 credits to the original photographers (unsplash): nikolay smeh, amy tran
 credits to the original photographers (pexels): JAN N G U Y E N, Jonathan Borba, Nguyen Phuong NGUYEN 
+Link to the webpage: https://sunwukong97.github.io/project_1_restaurant/
 
