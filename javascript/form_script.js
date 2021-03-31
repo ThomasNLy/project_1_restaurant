@@ -76,7 +76,8 @@ function submitButtonAction(){
         let person = {
             'name': nameField.value,
             'email': emailField.value,
-            'subject': subjectField.value
+            'subject': subjectField.value,
+            'message': messageField.value
         };
     
         //object properties are known as keys, similar to a map list
