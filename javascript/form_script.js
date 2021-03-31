@@ -1,6 +1,6 @@
 /**
  * @author Thomas Nguyen
- * This script controls how the form element will behave based on the inputs it recieves from the user
+ * This script controls how the form element will behave based on the inputs it recieves from the user,
  * if any fields are left empty on the form an error message will appear under the empty field. If all fields
  * are filled out when the user clicks the submit button a pop up modal will appear to indicate that the form 
  * has been submitted.
