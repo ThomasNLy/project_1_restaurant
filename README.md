@@ -23,7 +23,7 @@ For the layout of the contents, inspiration was taken from fashion magazines suc
 ![screen shot of the home page](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/Web%201920%20homepage%20%E2%80%93%201.png)
 *The home page*
  
-![screen shot of the home page when viewed on a tablet](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/iPad%2C%20Nexus%209%20%E2%80%93%20hompage%202.png)  
+![screen shot of the home page when viewed on a tablet](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/iPad%2C%20Nexus%209%20%E2%80%93%20homepage.png)  
 *When viewed on a tablet*
 
 
