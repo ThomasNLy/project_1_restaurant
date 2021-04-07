@@ -468,3 +468,143 @@ footer p{
 
 }
 
+@media screen and (width: 1024px) and (height: 1366px){
+    .hamburgerMenu{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.6em 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .logo{
+        margin-left: 1.5em;
+    }
+    .navLinks{
+        width: 30%;
+        margin-right: 2em;
+    }
+    
+    .navLinks ul{
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        background-color: transparent;
+        position: static;
+        
+        
+    }
+
+    .navLinks a{
+        padding: 0;
+        width: 100%;
+        font-size: 1.15rem;
+    }
+
+    
+    .imageContainer{
+        padding: 1.75em 1.75em;
+        
+        
+
+        height: 600px;
+        max-height: 70%;
+        
+        display: grid;
+        grid-template-columns: 50% 45%;
+        grid-template-rows: 45% 55%;
+        grid-template-areas: 
+        "item-1 item-3"
+        "item-2 item-3";
+
+        row-gap: 1.5em;
+        column-gap: 1.75em;
+
+        overflow: hidden;
+        
+    }
+    
+
+    .img1{
+        display: block;
+        grid-area: item-1;
+
+        max-height: 100%;
+        max-width: 100%;
+
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .img1 img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    .img2{
+        grid-area: item-2;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img2 img{
+        object-fit: fill;
+        
+    }
+
+    .img3{
+        
+        grid-area: item-3;
+        margin-top: 0;
+        
+        height: 100%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .img3 img{
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .story{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .info2{
+        padding-left: 0;
+    }
+
+    
+    footer{
+        padding-bottom: 2em;
+    }
+
+    footer p{
+        display: inline;
+    }
+
+    footer .hours{
+        margin-top: 1em;
+    }
+
+
+}
+
