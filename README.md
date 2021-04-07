@@ -13,6 +13,8 @@ Link to the webpage: https://sunwukong97.github.io/project_1_restaurant/
 
 ## Inspiration
 When it came to designing the aesthetic of the overall website, I took inspiration from high end restaurants/cafes due to their minimilistic design. I noticed how they were able to captivate an audience's attention and direct them to key points on their webpages due to their simplisticity. An example being their menu page. Rarely would pictures ever be included along side the name of the dish but rather a descripion would be given detailing the ingredients along with how the dish is prepared. Due to this one would be able to imagine the aromas and flavours emanating from the dish before they have even feasted their eyes upon it. 
+![screen shot of the menu page](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/Web%201920%20%E2%80%93%20menu%20page.png)
+
 ## Technologies
 Project is created with:
 * HTML5
