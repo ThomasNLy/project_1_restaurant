@@ -87,6 +87,10 @@ function submitButtonAction(){
             }
         }
         alertDialog.style.display = "block";
+        alertDialog.classList.add("animateOverlayFadeIn");
+        setTimeout(() => {
+            alertDialog.classList.remove("animateOverlayFadeIn");
+        }, 300);
 
         return true;
     }
