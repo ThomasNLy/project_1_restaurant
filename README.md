@@ -18,7 +18,9 @@ When it came to designing the aesthetic of the overall website, I took inspirati
 ![screen shot of the menu page](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/Web%201920%20%E2%80%93%20menu%20page.png)
 *The menu page*
 
-For the layout of the contents, inspiration was taken from fashion magazines such as GRIND or Hypebeast. Each article contained an image or several images that would be the focal point of the page allowing them to showcase the topic at hand. Even though the images themselves did not have to neccessarily take up a vast majority of the page the way they were layed out allowed the reader to focus on them without being pulled away from the written text. There is a sense of balance when it comes to the amount of space each element takes up on a page.
+Another important note I noticed when it came to a restaurant's website they would usually include their ethos on their landing page. From my understanding it allows for visitors to get a quick glimpse on what the restaurant is known for/about without having to navigate further to their "about" page. 
+
+When it came to the layout of the contents, inspiration was taken from fashion magazines such as GRIND or Hypebeast. Each article contained an image or several images that would be the focal point of the page allowing them to showcase the topic at hand. Even though the images themselves did not have to neccessarily take up a vast majority of the page the way they were layed out allowed the reader to focus on them without being pulled away from the written text. There is a sense of balance when it comes to the amount of space each element takes up on a page.
 
 ![screen shot of the home page](https://github.com/SunWukong97/project_1_restaurant/blob/main/images/restaurant_mockup/Web%201920%20homepage%20%E2%80%93%201.png)
 *The home page*
