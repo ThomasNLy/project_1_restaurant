@@ -36,4 +36,4 @@ Project is created with:
 * JavaScript (ES6)
 
 ## Credits
-author: SunWukong97 (Thomas Nguyen)
+author: ThomasNLy (Thomas Nguyen)
